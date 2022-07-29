@@ -1,0 +1,119 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background-color: #062047;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 290px;
+  height: 490px;
+  padding: 12px;
+  background-color: #113b79;
+  border-radius: 10px;
+  box-shadow: 4px 3px 5px #052742;
+  overflow: hidden;
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-wrapper > img {
+  display: block;
+}
+
+.image-wrapper > .content {
+  position: absolute;
+  inset: 0;
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: aqua;
+  border-radius: 10px;
+  opacity: 40%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.image-wrapper > img,
+.image-wrapper > .content {
+  transition: 200ms, ease-in-out;
+}
+
+.image-wrapper > .content.fade {
+  opacity: 0;
+}
+
+.image-wrapper:hover > .content.fade {
+  opacity: 40%;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#top {
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+
+#top:hover {
+  color: aqua;
+  cursor: pointer;
+}
+
+#mid {
+  color: #8b8a8a;
+}
+
+#eth {
+  display: inline;
+  font-weight: bold;
+  color: aqua;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 15px;
+}
+
+#eth2 {
+  display: inline;
+  color: #8b8a8a;
+  font-size: 19px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, gray, gray, gray);
+}
+
+#owner {
+  width: 30px;
+}
+
+#create {
+  display: inline;
+  padding-bottom: 20px;
+}
+
+b {
+  color: white;
+}
+
+b:hover {
+  color: aqua;
+}
